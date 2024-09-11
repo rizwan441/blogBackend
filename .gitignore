@@ -2,10 +2,11 @@
 /dist
 /node_modules
 /build
+/uploads
 
 # Logs
 logs
-*.log
+*.loggit 
 npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
