@@ -40,7 +40,8 @@ export class UserController {
     const findAllUser = await this.UserService.findAllUser();
     return findAllUser;
   }
-
+  
+  @UseGuards(JwtAuthGuard, RolesGuard)
   @Put(':id')
   async updateOne(
     @Param('id') id: string,
